@@ -1,0 +1,9 @@
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto auto;
+  width: 100%;
+  .button {
+    margin: 0;
+  }
+}

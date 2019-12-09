@@ -1,0 +1,21 @@
+@import "../../styles/theme";
+
+.categories-grid {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  &__tutorial {
+    padding-top: $padding-m;
+  }
+  @media #{$tablet-screen} {
+    width: 85%;
+  }
+  @media #{$phone-screen-wide} {
+    .grid {
+      grid-template-columns: auto;
+      gap: $padding-s;
+    }
+  }
+}

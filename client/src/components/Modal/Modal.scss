@@ -1,0 +1,42 @@
+@import "../../styles/theme.scss";
+@import "../../styles//mixins/shadows.scss";
+
+.mask {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.modal {
+  @include button-shadow();
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  padding: $padding-m;
+  width: 60%;
+  &__top-bar {
+    align-items: center;
+    display: flex;
+    height: $font-size-m;
+    justify-content: space-between;
+    border-bottom: 1px solid $silver;
+    padding-bottom: $padding-m;
+    margin-bottom: $padding-s;
+  }
+  &__close-icon {
+    cursor: pointer;
+    height: $font-size-m;
+  }
+  &__content {
+    font-size: $font-size-m;
+    overflow: scroll;
+    padding-bottom: $padding-m;
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../styles/theme";
+@import "../../styles/mixins/gradients";
+@import "../../styles/mixins/shadows";
+
+.button {
+  @include button-shadow();
+  border: $default-border;
+  color: white;
+  cursor: pointer;
+  font-family: $primary-font;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight-bold;
+  padding: $padding-m $padding-xl;
+  text-transform: uppercase;
+  transition: 0.2s all linear;
+  margin-top: $padding-xxs;
+  max-width: 100%;
+  &:hover {
+    box-shadow: none;
+  }
+  @media #{$phone-screen} {
+    padding: $padding-xs $padding-s;
+  }
+}

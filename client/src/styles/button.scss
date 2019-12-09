@@ -1,0 +1,27 @@
+.button {
+  &_link {
+    background: transparent;
+    box-shadow: none;
+    color: $black;
+    font-family: $quicksand;
+    font-size: $font-size-s;
+    font-weight: 600;
+    padding: $padding-xs $padding-s;
+    text-decoration: none;
+  }
+  &_full-width {
+    width: 100%;
+  }
+  &_blue {
+    @include linear-gradient($malibu, $mariner);
+  }
+  &_purple {
+    @include linear-gradient($tomato, $indigo);
+  }
+  &_red {
+    @include linear-gradient($burntsienna, $venetianred);
+  }
+  &_orange {
+    @include linear-gradient($darktangerine, $outrageousorange);
+  }
+}

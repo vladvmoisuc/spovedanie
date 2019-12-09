@@ -1,0 +1,11 @@
+@import "normalize";
+@import "mixins/gradients";
+@import "theme";
+@import "button";
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}

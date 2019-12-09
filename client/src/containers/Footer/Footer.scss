@@ -1,0 +1,10 @@
+@import "../../styles/theme.scss";
+
+.footer {
+  padding: $padding-l;
+  &__copy {
+    font-family: $quicksand;
+    font-size: $font-size-s;
+    margin: 0;
+  }
+}
