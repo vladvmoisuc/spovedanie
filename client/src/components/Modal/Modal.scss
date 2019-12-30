@@ -18,7 +18,7 @@
   background: $white;
   display: flex;
   flex-direction: column;
-  height: 60%;
+  height: 80%;
   padding: $padding-m;
   width: 60%;
   &__top-bar {
@@ -26,9 +26,16 @@
     display: flex;
     height: $font-size-m;
     justify-content: space-between;
-    border-bottom: 1px solid $silver;
     padding-bottom: $padding-m;
     margin-bottom: $padding-s;
+  }
+  &__sub-heading {
+    color: $malibu;
+    font-family: $quicksand;
+    font-size: $font-size-s * 1.25;
+    font-weight: 600;
+    margin-bottom: $padding-m;
+    text-transform: uppercase;
   }
   &__close-icon {
     cursor: pointer;
@@ -37,6 +44,33 @@
   &__content {
     font-size: $font-size-m;
     overflow: scroll;
-    padding-bottom: $padding-m;
+    font-family: $quicksand;
+    padding: 0 $padding-s $padding-m $padding-s;
+    img {
+      width: 60%;
+    }
+  }
+
+  @media #{$tablet-screen} {
+    width: 75%;
+  }
+
+  &_text-centered {
+    text-align: center;
+  }
+}
+
+.modal .button {
+  width: 60%;
+}
+
+@media #{$phone-screen} {
+  .modal {
+    img {
+      width: 100%;
+    }
+    .button {
+      width: 100%;
+    }
   }
 }

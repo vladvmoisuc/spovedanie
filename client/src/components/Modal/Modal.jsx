@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import classnames from "classnames";
+import Button from "../Button";
 import { ReactComponent as CloseIcon } from "../../images/x-icon.svg";
 import "./Modal.scss";
 
@@ -35,15 +36,32 @@ class Modal extends Component {
   };
 
   render() {
-    const { title, children, className, closeModal } = this.props;
+    const {
+      title,
+      secondaryTitle,
+      children,
+      className,
+      buttonLabel,
+      closeModal
+    } = this.props;
     return ReactDOM.createPortal(
       <div className="mask">
         <div className={classnames("modal", className)}>
           <div className="modal__top-bar">
-            <h1 className="modal__heading heading">{title}</h1>
+            <span className="modal__heading heading">{title}</span>
             <CloseIcon className="modal__close-icon" onClick={closeModal} />
           </div>
-          <div className="modal__content">{children}</div>
+          <span className="modal__sub-heading sub-heading">
+            {secondaryTitle}
+          </span>
+          <div className="modal__content">
+            {children}
+            <Button
+              label={buttonLabel}
+              className="button_blue"
+              onClick={closeModal}
+            />
+          </div>
         </div>
       </div>,
       container
