@@ -11,7 +11,9 @@ import "./Header.scss";
 const Header = () => {
   return (
     <Switch>
-      <Route path="/:category" render={props => <TwoColumns {...props} />} />
+      <Route path="/:category">
+        <TwoColumns />
+      </Route>
       <Route exact path="/">
         <SingleColumn />
       </Route>

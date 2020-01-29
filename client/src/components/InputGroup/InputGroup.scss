@@ -1,0 +1,20 @@
+@import "../../styles/theme";
+
+.input-group {
+  margin-top: $padding-m;
+  &_field {
+    margin-bottom: $padding-m;
+  }
+  &_label {
+    display: block;
+    margin-bottom: $padding-xxs;
+  }
+  &_input {
+    border: none;
+    border-bottom: 2px solid $malibu;
+    background-color: lighten($malibu, 30%);
+    box-sizing: border-box;
+    padding: $padding-s $padding-xxs;
+    width: 100%;
+  }
+}

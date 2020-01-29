@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+// Components
+import FloatingButton from "../../components/FloatingButton";
 
 // Stylesheet
 import "./Footer.scss";
@@ -7,11 +9,8 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <footer className="footer">
-      <p className="footer__copy">
-        Spovedanie © {new Date().getFullYear()}.
-        {/* <Link>De ce?</Link>
-        <Link>Cine?</Link> */}
-      </p>
+      <p className="footer__copy">Spovedanie © {new Date().getFullYear()}.</p>
+      <FloatingButton />
     </footer>
   );
 };

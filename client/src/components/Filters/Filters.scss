@@ -1,0 +1,77 @@
+@import "../../styles/theme.scss";
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $padding-m;
+  &__button {
+    background: transparent;
+    box-shadow: none;
+    margin-right: $padding-s;
+    padding: $padding-s $padding-m;
+    border: 2px solid $silver;
+    color: $silver;
+    font-size: $font-size-s;
+    &:hover {
+      color: $white;
+    }
+    &_default {
+      $background: $silver;
+      &:hover {
+        background: $silver;
+      }
+      &:disabled {
+        color: $white;
+        background: $silver;
+      }
+    }
+    &_blue {
+      border: 2px solid $malibu;
+      color: $malibu;
+      font-size: $font-size-s;
+      &:hover {
+        background: $malibu;
+      }
+      &-active {
+        background: $malibu;
+        color: $white;
+      }
+    }
+    &_purple {
+      border: 2px solid $indigo;
+      color: $indigo;
+      font-size: $font-size-s;
+      &:hover {
+        background: $indigo;
+      }
+      &-active {
+        background: $indigo;
+        color: $white;
+      }
+    }
+    &_red {
+      border: 2px solid $venetianred;
+      color: $venetianred;
+      font-size: $font-size-s;
+      &:hover {
+        background: $venetianred;
+      }
+      &-active {
+        background: $venetianred;
+        color: $white;
+      }
+    }
+    &_orange {
+      border: 2px solid $outrageousorange;
+      color: $outrageousorange;
+      font-size: $font-size-s;
+      &:hover {
+        background: $outrageousorange;
+      }
+      &-active {
+        background: $outrageousorange;
+        color: $white;
+      }
+    }
+  }
+}

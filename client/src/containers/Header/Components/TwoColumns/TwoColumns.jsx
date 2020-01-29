@@ -12,7 +12,9 @@ const TwoColumns = ({ history }) => {
   return (
     <header className="header header__two-columns">
       <div className="header__left-container">
-        <Arrow className="header__go-back" onClick={history.goBack} />
+        <Link to="/">
+          <Arrow className="header__go-back" />
+        </Link>
       </div>
       <div className="header__right-container">
         <Link to="/" className="header__logo-container">

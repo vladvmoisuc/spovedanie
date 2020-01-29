@@ -1,0 +1,6 @@
+{
+  "env": "production",
+  "port": 9100,
+  "connection": "mongodb://localhost/spovedanie",
+  "jwtPrivateKey": "SPOVEDANIE_JWT"
+}

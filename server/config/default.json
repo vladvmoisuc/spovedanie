@@ -1,0 +1,6 @@
+{
+  "env": "development",
+  "port": 9100,
+  "connection": "mongodb://localhost/playground",
+  "jwtPrivateKey": "SPOVEDANIE_JWT"
+}

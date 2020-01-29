@@ -1,0 +1,19 @@
+@import "../../styles/theme";
+
+.questions-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $padding-m;
+  a {
+    text-decoration: none;
+  }
+  @media #{$laptop-screen} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media #{$tablet-screen} {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media #{$phone-screen} {
+    grid-template-columns: 1fr;
+  }
+}

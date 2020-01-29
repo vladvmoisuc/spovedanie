@@ -1,0 +1,31 @@
+@import "../../styles/theme.scss";
+
+.difficulty-level {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 15%;
+  @media #{$phone-screen} {
+    width: 30%;
+  }
+}
+
+.level-bar {
+  background: $silver;
+  display: block;
+  height: 0.5rem;
+  margin-right: 0.5rem;
+  width: 100%;
+  &_blue {
+    background: $malibu;
+  }
+  &_purple {
+    background: $indigo;
+  }
+  &_orange {
+    background: $outrageousorange;
+  }
+  &_red {
+    background: $venetianred;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../styles/theme";
+@import "../../styles/mixins/gradients";
+@import "../../styles/mixins/shadows";
+
+.question-card {
+  align-items: flex-end;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &__question {
+    @include button-shadow();
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: $padding-s;
+    width: 100%;
+    transition: 0.4s;
+    &:hover {
+      box-shadow: none;
+    }
+    &_blue {
+      @include linear-gradient($malibu, $mariner);
+    }
+    &_purple {
+      @include linear-gradient($tomato, $indigo);
+    }
+    &_red {
+      @include linear-gradient($burntsienna, $venetianred);
+    }
+    &_orange {
+      @include linear-gradient($darktangerine, $outrageousorange);
+    }
+  }
+  &__buttons {
+    display: flex;
+  }
+  &__button {
+    flex-grow: 1;
+    padding: $padding-xxs;
+    cursor: pointer;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    width: 25px;
+  }
+}

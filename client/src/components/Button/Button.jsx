@@ -3,9 +3,14 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./Button.scss";
 
-const Button = ({ className, label, onClick }) => {
+const Button = ({ className, label, value, isDisabled, onClick }) => {
   return (
-    <button className={classNames("button", className)} onClick={onClick}>
+    <button
+      className={classNames("button", className)}
+      disabled={isDisabled}
+      onClick={onClick}
+      value={value}
+    >
       {label}
     </button>
   );

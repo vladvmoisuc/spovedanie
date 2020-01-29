@@ -20,7 +20,7 @@
   flex-direction: column;
   height: 80%;
   padding: $padding-m;
-  width: 60%;
+  width: 50%;
   &__top-bar {
     align-items: center;
     display: flex;
@@ -43,9 +43,9 @@
   }
   &__content {
     font-size: $font-size-m;
-    overflow: scroll;
+    overflow-y: scroll;
     font-family: $quicksand;
-    padding: 0 $padding-s $padding-m $padding-s;
+    padding: 0 $padding-l $padding-m;
     img {
       width: 60%;
     }
@@ -61,11 +61,22 @@
 }
 
 .modal .button {
+  margin-top: $padding-l;
   width: 60%;
+}
+
+@media #{$tablet-screen} {
+  .modal {
+    &__content {
+      font-size: $font-size-s * 1.3;
+      padding: 0 $padding-s $padding-s;
+    }
+  }
 }
 
 @media #{$phone-screen} {
   .modal {
+    padding: $padding-xs;
     img {
       width: 100%;
     }

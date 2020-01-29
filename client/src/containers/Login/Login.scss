@@ -1,0 +1,28 @@
+@import "../../styles/theme";
+@import "../../styles/mixins/shadows";
+
+.form-container {
+  @include button-shadow();
+  display: flex;
+  flex-direction: column;
+  padding: $padding-l;
+  width: 40%;
+  margin: $padding-l 0;
+  @media #{$tablet-screen} {
+    width: 60%;
+  }
+  @media #{$phone-screen} {
+    width: 70%;
+  }
+  &_form {
+    font-family: $primary-font;
+    font-size: $font-size-s;
+    margin-top: $padding-s;
+    width: 100%;
+  }
+  .button {
+    float: right;
+    padding: $padding-s $padding-m;
+    margin-top: $padding-m;
+  }
+}

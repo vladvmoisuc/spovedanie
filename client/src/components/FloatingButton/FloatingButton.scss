@@ -1,0 +1,24 @@
+@import "../../styles/theme";
+@import "../../styles/mixins/gradients";
+@import "../../styles/mixins/shadows";
+
+.floating-button {
+  @include button-shadow();
+  background: $white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: $padding-s;
+  transition: 0.2s all linear;
+  padding: $padding-s;
+  width: 30px;
+  height: 30px;
+  border: 4px solid $malibu;
+  svg {
+    height: 30px;
+    fill: $malibu;
+  }
+  &:hover {
+    box-shadow: none;
+  }
+}

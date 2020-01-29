@@ -10,6 +10,12 @@ import Button from "./../../components/Button";
 import Grid from "./../../components/Grid";
 import Modal from "../../components/Modal";
 
+// Images
+import Tutorial1 from "../../images/tutorial-1.png";
+import Tutorial2 from "../../images/tutorial-2.png";
+import Tutorial3 from "../../images/tutorial-3.png";
+import Tutorial4 from "../../images/tutorial-4.png";
+
 // Stylesheet
 import "./CategoriesGrid.scss";
 
@@ -37,7 +43,7 @@ class CategoriesGrid extends Component {
       <div className={classNames("categories-grid", className)}>
         <Grid className="categories-grid__buttons">
           {menu.map(menuItem => (
-            <Link to={`/${menuItem.category}/1`} key={menuItem.category}>
+            <Link to={`/${menuItem.category}`} key={menuItem.category}>
               <Button
                 label={menuItem.label}
                 className={classNames(
@@ -63,23 +69,30 @@ class CategoriesGrid extends Component {
             closeModal={this.closeModal}
             className="modal_text-centered"
           >
-            <p>1. Selecteaza o categorie si alege o intrebare.</p>
-            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HMWT2_AV2?wid=1144&hei=1144&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1553643128805" />
+            <p>1. Selectează o categorie și alege o întrebare.</p>
+            <img
+              alt="Apasă pe o categorie din meniul principal."
+              src={Tutorial1}
+            />
             <p>
-              2. Citeste-o cu voce tare sau trimite-o persoanei cu care vrei sa
+              2. Citește-o cu voce tare sau trimite-o persoanei cu care vrei să
               joci.
             </p>
-            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HMWT2_AV2?wid=1144&hei=1144&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1553643128805" />
+            <img alt="Trimite întrebarea unui prieten." src={Tutorial2} />
             <p>
-              3. Ti-a raspuns? Atunci e randul persoanei cu care joci sa aleaga
-              o intrebare.
+              3. Ți-a răspuns? E momentul să faceți schimb de roluri. Tura asta
+              tu o să răspunzi la o întrebare.
             </p>
-            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HMWT2_AV2?wid=1144&hei=1144&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1553643128805" />
+            <img
+              alt="Spune-i prietenului tău că e rândul său acum."
+              src={Tutorial3}
+            />
             <p>
-              4. Puneti o miza. De exemplu, cine nu raspunde bea un shot, face o
-              provocare sau ii da celuilalt niste bani(50 de bani, sau ceva).
+              4. Puneți o miza. De exemplu, cine nu raspunde bea un shot, face o
+              provocare sau îi dă celuilalt niște bani(5 bani, 10 bani, 15, 25
+              de bani).
             </p>
-            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HMWT2_AV2?wid=1144&hei=1144&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1553643128805" />
+            <img alt="Puneți o miză și distrați-vă." src={Tutorial4} />
           </Modal>
         )}
       </div>

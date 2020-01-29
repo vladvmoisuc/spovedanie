@@ -17,6 +17,13 @@ export const menu = [
   {
     label: "ORICARE",
     category: "oricare",
-    color: "orange"
+    color: "orange",
+    isAll: true
   }
 ];
+
+export const difficultyLevels = {
+  easy: 0,
+  normal: 1,
+  hard: 2
+};
