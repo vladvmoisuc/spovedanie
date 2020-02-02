@@ -1,3 +1,5 @@
 {
-  "jwtPrivateKey": "SPOVEDANIE_JWT"
+  "jwtPrivateKey": "SPOVEDANIE_JWT",
+  "connection": "SPOVEDANIE_DB",
+  "port": "SPOVEDANIE_PORT"
 }
