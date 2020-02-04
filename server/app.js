@@ -12,7 +12,7 @@ const path = require("path");
 db.connect();
 
 // Middlewares
-app.use(express.static(path.join(__dirname, "../client/build")));
+app.use(express.static(path.join(__dirname, "build")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
@@ -20,10 +20,11 @@ app.use("/api/", routes);
 
 // Serve files
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+  res.sendFile(path.join(__dirname, "build/index.html"));
 });
 
-const port = config.get("port");
+const port = process.env.PORT || 5000;
+
 app.listen(port, function() {
   debug(`Server started to listen on port ${port}.`);
 });

@@ -62,7 +62,7 @@
 
 .modal .button {
   margin-top: $padding-l;
-  width: 60%;
+  width: 80%;
 }
 
 @media #{$tablet-screen} {
@@ -76,7 +76,7 @@
 
 @media #{$phone-screen} {
   .modal {
-    padding: $padding-xs;
+    padding: $padding-m;
     img {
       width: 100%;
     }

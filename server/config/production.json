@@ -1,6 +1,5 @@
 {
   "env": "production",
-  "port": "SPOVEDANIE_PORT",
   "connection": "SPOVEDANIE_DB",
   "jwtPrivateKey": "SPOVEDANIE_JWT"
 }

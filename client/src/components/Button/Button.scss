@@ -20,5 +20,6 @@
   }
   @media #{$phone-screen} {
     padding: $padding-xs $padding-s;
+    font-size: $font-size-s * 1.2;
   }
 }

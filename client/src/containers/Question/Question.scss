@@ -16,4 +16,7 @@
   @media #{$tablet-screen} {
     width: 80%;
   }
+  @media #{$phone-screen} {
+    font-size: $font-size-xs;
+  }
 }

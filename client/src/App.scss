@@ -1,5 +1,11 @@
 @import "./styles/theme";
 
+.html {
+  @media #{desktop-screen} {
+    font-size: 12px;
+  }
+}
+
 .app {
   align-items: space-between;
   display: flex;
@@ -16,5 +22,8 @@
   width: 70%;
   @media #{$tablet-screen} {
     width: 85%;
+  }
+  @media #{$phone-screen} {
+    width: 95%;
   }
 }

@@ -54,5 +54,5 @@
   "devDependencies": {
     "enzyme-adapter-react-16": "^1.15.1"
   },
-  "proxy": "127.0.0.1:5000"
+  "proxy": "http://127.0.0.1:5000"
 }
