@@ -5,4 +5,4 @@ It has a simple interface, centered on the user's needs. It also have a basic lo
  - Front-End is created using React and SCSS.
  - Back-End consists in a NodeJS server, that it's done using Express, which fetches data from a MongoDB database.
 
-Visit: [spovedanie.herokuapp.com/](spovedanie.herokuapp.com/) 
+Visit: [spovedanie.herokuapp.com/](http://spovedanie.herokuapp.com/) 
